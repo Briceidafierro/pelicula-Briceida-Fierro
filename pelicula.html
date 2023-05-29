@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas -Briceida-</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+</head>
+<body>
+    <section class="home">
+        <div class="headerbg">
+            <header>
+                <div class="container">
+                    <div class="navbar flex1">
+                        <div class="logo">
+                            <img src="logo.png" alt="">
+                        </div>
+
+                        <nav>
+                            <ul id="menuintem">
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="product.html">Peliculas</a></li>
+                                <li><a href="index.html">Mas reciente</a></li>
+                                <li><a href="index.html">Mi lista</a></li>
+                            </ul>
+                        </nav>
+                        <span class="fa fa-bars" onclick="menuoggle()"></span>
+
+                        <div class="subscribe flex">
+                            <i class="fas fa-search"></i>
+                            <i id="palybtn" class="fas fa-user"></i>
+                            <button>Suscribete</button>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="home_content mtop">
+                <div class="container">
+                    <div class="left">
+                        <h1>Merlina</h1>
+
+                        <div class="time flex">
+                            <label>TV</label>
+                            <i class="fas fa-circle"></i>
+                            <span>1 temporada</span>
+                            <i class="fas fa-circle"></i>
+                            <p>2022</p>
+                            <i class="fas fa-circle"></i>
+                            <button>Accion</button>
+                        </div>
+
+                        <p>Cuando expulsan a Merlina de la escuela por hacer una broma
+                            deliciosamente malvada, sus padres la envian a la academia Nunca Mas.</p>
+                            <div class="button flex">
+                                <button class="btn">Reproduccir</button>
+                                <i id="palybtn" class="fas fa-play"></i>
+                                <p>Ver trailer</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    var menuintem = document.getElemetById(menuintem);
+    menuintem.style.maxHeight = "0px";
+
+    function menuoggle(){
+        if (menuintem.style.maxHeight == '0px'){
+            menuintem.style.maxHeight = "200px"
+        } else {
+            menuintem.style.maxHeight = "0px"
+        }
+    }
+
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 50)
+    })
+</script>
+
+<section class="popular top">
+    <div class="container">
+        <div class="heading flex1">
+            <h2>Mas populares</h2>
+            <button>Mas video</button>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen1.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Post mortem</h3>
+                        <div class="time flex">
+                            <span>6 episodios</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen2.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>La reina del sur</h3>
+                        <div class="time flex">
+                            <span>3 temporadas</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen3.jpg">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Ratched</h3>
+                        <div class="time flex">
+                            <span>8 episodios</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen4.jpg" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Rosario tijeras</h3>
+                        <div class="time flex">
+                            <span>3 temporadas</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen5.png">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Guerra de vecinos</h3>
+                        <i class="time flex"></i>
+                        <span>2 temporadas</span>
+                        <i class="fas fa-circle"></i>
+                        <a>Accion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="imagen6.png" alt="">
+                    <div class="icon">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-share-alt"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <i id="palybtn" class="fas fa-play"></i>
+                </div>
+                <div class="text">
+                    <h3>Vecinos invasores</h3>
+                    <div class="time flex">
+                        <span>1h 23min</span>
+                        <i class="fas fa-circle"></i>
+                        <a>Accion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="imagen7.png">
+                    <div class="icon">
+                        <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <i id="palybtn" class="fas fa-play"></i>
+                </div>
+                <div class="text">
+                    <h3>Matilda</h3>
+                    <div class="time flex">
+                        <span>1h 38min</span>
+                        <i class="fas fa-circle"></i>
+                        <a>Accion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="popular mtop">
+    <div class="container">
+        <div class="heading flex1">
+            <h2>Mas vistos</h2>
+            <button>Mas video</button>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen8.png" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Bob esponja: al rescate</h3>
+                        <div class="time flex">
+                            <span>1h 35min</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen9.png">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>No manches, frida</h3>
+                        <div class="time flex">
+                            <span>1h 54min</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen10.png" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Zombieland: tiro de gracia</h3>
+                        <div class="time flex">
+                            <span>1h 39min</span>
+                            <i class="fas fa-circle"></i>
+                            <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen11.PNG" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Los pitufos</h3>
+                        <div class="time flex">
+                            <span>52 episodios</span>
+                            <i class="fas fa-circle"></i>
+                <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen12.PNG" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <i id="palybtn" class="fas fa-play"></i>
+                </div>
+                <div class="text">
+                    <h3>The walkingg dead </h3>
+              <div class="time flex">
+                <span>11 temporadas</span>
+                <i class="fas fa-circle"></i>
+                <a>Accion</a>
+              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!-- Owl Carousel -->
+
+<script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+<section class="new_realase top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+            <div class="items">
+                <div class="left">
+                    <div class="img">
+                        <img src="imagen13.PNG" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2> <span></span> NEW REALEASE</h2>
+              <h1>Misterio a la vista</h1>
+                    </div>
+                    <div class="time flex">
+                        <label>PG</label>
+                        <i class="fas fa-circle"></i>
+              <span>1hrs 50mins</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Accion</button>
+                    </div>
+                    <p>Luego de abrir su propia agencia de detectives, Nick y Audrey Spitz
+                        consiguen un caso de altisimo perfil cuando su amigo multimillonario
+                        es secuestrado en su propia boda.
+                    </p>
+
+                    <div class="button flex">
+                        <button class="btn">Reproduccir</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>Ver trailer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="left">
+                    <div class="img">
+                        <img src="imagen14.PNG" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2> <span></span> NEW REALEASE</h2>
+              <h1>You</h1>
+                    </div>
+                    <div class="time flex">
+                        <label>TV</label>
+              <i class="fas fa-circle"></i>
+              <span>4 temporadas</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <p>2018</p>
+              <i class="fas fa-circle"></i>
+              <button>Accion</button>
+                    </div>
+                    <p>Un primer encuentro soñado pronto se convierte en pesadilla luego
+                        de que el encargado de una libreria se interesa demasiado por
+                        una estudiante de posgrado./p>
+
+                        <div class="button flex">
+                            <button class="btn">Reproduccir</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>Ver trailer</p>
+                        </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="left">
+                    <div class="img">
+                        <img src="imagen15.PNG" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2> <span></span> NEW REALEASE</h2>
+              <h1>Jefe en pañales</h1>
+                    </div>
+                    <div class="time flex">
+                        <label>TV</label>
+              <i class="fas fa-circle"></i>
+              <span>2 temporadas</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2022</p>
+              <i class="fas fa-circle"></i>
+              <button>Accion</button>
+                    </div>
+
+                    <p>Jefe bebe vuelve a la oficina, pero se encuentra con una cultura
+                        muy cambiada. Para recuperar su antiguo cargo, tendra que arrebatarelo
+                        a su talentosa sobrina Tina.
+                    </p>
+
+                    <div class="button flex">
+                        <button class="btn">Reproduccir</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>Ver trailer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="left">
+                    <div class="img">
+                        <img src="imagen16.PNG" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2> <span></span> NEW REALEASE</h2>
+              <h1>El mundo magico de Terabithia</h1>
+                    </div>
+                    <div class="time flex">
+                        <label>PG</label>
+                        <i class="fas fa-circle"></i>
+                        <span>1h 31min</span>
+                        <i class="fas fa-circle"></i>
+              <a class="flex"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 5.1</a>
+              <i class="fas fa-circle"></i>
+              <p>2007</p>
+              <i class="fas fa-circle"></i>
+              <button>Accion</button>
+                    </div>
+
+                    <p>En esta aventura basada en la exitosa novela, Leslie, la nueva 
+                        compañera de clase, le muestra a Jesse un fascinante mundo de fantasia
+                        e imaginacion.
+                    </p>
+
+                    <div class="button flex">
+                        <button class="btn">Reproduccir</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>Ver trailer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="left">
+                    <div class="img">
+                        <img src="imagen17.PNG" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2> <span></span> NEW REALEASE</h2>
+              <h1>Botas perfectas</h1>
+                    </div>
+                    <div class="time flex">
+                        <label>PG</label>
+              <i class="fas fa-circle"></i>
+              <span>1h 52min</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 5.1</a>
+              <i class="fas fa-circle"></i>
+              <p>2012</p>
+              <i class="fas fa-circle"></i>
+              <button>Accion</button>
+                    </div>
+
+                    <p>Beca se une al grupo de canto a capela las Bellas y renueva su 
+                        anticuado estilo para vencer a un coro masculino en una competencia
+                        universitaria
+                    </p>
+
+                    <div class="button flex">
+                        <button class="btn">Reproduccir</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>Ver trailer</p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+</script>
+
+<section class="popular mtop">
+    <div class="container ">
+        <div class="heading flex1">
+            <h2>Comedias</h2>
+        <button>Mas video</button>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen18.PNG" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Fuga de reinas</h3>
+                        <div class="time flex">
+                            <span>1h 37min</span>
+                <i class="fas fa-circle"></i>
+                <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen19.PNG" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Dieciocho otra vez</h3>
+                        <div class="time flex">
+                            <span>1h 25min</span>
+                <i class="fas fa-circle"></i>
+                <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen20.PNG" alt="">
+                        <div class="icon">
+                            <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <i id="palybtn" class="fas fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>¿y donde estan las rubias?</h3>
+                        <div class="time flex">
+                            <span>1h 49min</span>
+                <i class="fas fa-circle"></i>
+                <a>Accion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="box">
+                    <div class="imgBox">
+                        <img src="imagen21.PNG" alt="">
+                    </div>
+                    <div class="icon">
+                        <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <i id="palybtn" class="fas fa-play"></i>
+                </div>
+                <div class="text">
+                    <h3>No se aceptan devoluciones</h3>
+                    <div class="time flex">
+                        <span>2h 1min</span>
+                <i class="fas fa-circle"></i>
+                <a>Accion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="imagen22.PNG" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+                </div>
+
+                <div class="content">
+                    <i id="palybtn" class="fas fa-play"></i>
+                </div>
+                <div class="text">
+                    <h3>Jumanji: en la selva</h3>
+                    <div class="time flex">
+                        <span>1h 59min</span>
+                <i class="fas fa-circle"></i>
+                <a>Accion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- paxi mate ko lai aata hai-->
+<script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+<footer>
+    <div class="container mtop">
+        <div class="box">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+                </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Download App</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="img flex1">
+          <img src="imagen1.jpg" alt="">
+          <img src="imagen2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved |
+         This template is made By <i class="fas fa-heart"></i>Briceida Yamileth Fierro Verdugo</p>
+</footer>
+</body>
+</html>
